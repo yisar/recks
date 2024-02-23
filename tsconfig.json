@@ -1,10 +1,14 @@
 {
-    "extends": "./configs/tsconfig.base.json",
-    "compilerOptions": {
-        "jsx": "react",
-        "jsxFactory": "Recks.createElement",
-        "types": ["jest"],
-        "esModuleInterop": true
-    },
-    "exclude": ["/dist"]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "_version": "2.0.0",
+  "compilerOptions": {
+    "lib": ["es2022"],
+    "module": "Node16",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
+  }
 }
